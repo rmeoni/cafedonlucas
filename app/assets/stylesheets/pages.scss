@@ -1,0 +1,296 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#home-jumbotron {
+	background-image: url("/images/SAM_6998.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 600px;
+	margin:50px;
+	text-align: center;
+}
+
+#home-jumbotron h1 {
+	font-family: 'Catamaran';
+	text-transform: uppercase;
+}
+
+#home-supporting {
+	text-align: center;
+	height: 700px;
+	padding: 40px;
+	text-transform: uppercase;
+
+}
+
+#home-supporting h1 {
+	color: #969696;
+	letter-spacing: 2px;
+	margin-top: 200px;
+}
+
+#home-supporting h3{
+	padding: 20px;
+}
+
+#home-supporting p {
+	text-transform: none;
+	font-size: 1.2em;
+}
+
+
+#home-supporting-2 {
+	background-image: url("/images/regiones-multi.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 600px;
+	text-align: center;
+	margin:50px;
+	background-attachment: fixed;
+
+}
+
+#bs-over #home-supporting-2 {
+	font-family: 'Catamaran'
+}
+
+#bs-over #home-supporting-2 h2 {
+	padding-top: 195px;
+	font-size: 1.5em;
+	  color: #fff;
+	  text-shadow: 0px 2px 3px #333;
+	  letter-spacing: 2px;
+	  text-transform: uppercase;
+}
+
+#bs-over #home-supporting-2 h4 {
+	padding: 20px 0px 0px 0px;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 0px 2px 3px #333;
+	letter-spacing: 2px;
+
+
+}
+
+#home-featuring {
+	text-align: center;
+	margin-bottom: 150px;
+}
+
+#home-featuring h3 {
+	text-transform: uppercase;
+}
+
+#home-featuring p {
+	text-align: left;
+	letter-spacing: 1px;
+	color: #989898;
+	margin-bottom: 40px;
+}
+
+#bs-over #home-featuring #button {
+	padding: 18px 35px 18px 35px;
+	border: 2px solid #000;
+	border-radius: 2%;
+	background-color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+
+}
+
+#bs-over #home-featuring #button:hover {
+	background-color: #000;
+	color: #fff;
+	transition: background-color .3s;
+}
+
+#home-featuring-2 {
+	text-align: center;
+	margin-top: 200px;
+
+}
+
+#home-featuring-2 h3 {
+	padding: 40px 40px 10px 40px;
+}
+
+#bs-over #home-featuring-2 p {
+	margin-bottom: 40px;
+}
+
+
+
+#home-featuring-2 #button:hover {
+	background-color: #000;
+	color: #fff;
+	transition: background-color .3s;
+}
+
+/** product display **/
+
+#bs-over #home-product {
+	margin-top: 300px;
+}
+
+#bs-over #home-product .img-responsive {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+#bs-over #home-product .region-name
+{
+	position: absolute;
+	color: #fff;
+	text-shadow: 0px 1px 2px #000;
+}
+
+#bs-over #home-product p {
+	display: inline-block;
+	float: left;
+}
+
+/** tienda en linea **/
+
+#bs-over #page-product {
+	margin-top: 20px;
+}
+
+#bs-over #page-product .img-responsive {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+#bs-over #page-product .region-name
+{
+	position: absolute;
+	color: #fff;
+	text-shadow: 0px 1px 2px #000;
+}
+
+#bs-over #page-product p {
+	display: inline-block;
+	float: left;
+}
+
+#origenes-supporting p {
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+}
+
+#bs-over #distribuidores {
+	text-align: center;
+}
+
+#bs-over #distribuidores .row {
+	margin: 80px; 
+	padding: 40px;
+}
+#bs-over #distribuidores h3 {
+	text-transform: uppercase;
+	text-decoration: underline;
+	letter-spacing: 2px;
+}
+
+#bs-over #contacto {
+	text-align: center;
+}
+
+#bs-over #faq {
+	text-align: center;
+}
+
+#bs-over #faq h3 {
+	text-transform: uppercase;
+}
+
+#bs-over #faq p {
+	text-align: justify;
+}
+
+#bs-over .region p {
+	margin-bottom: 40px;
+}
+
+#bs-over .region ul {
+	list-style-type: none;
+	display: inline;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#bs-over .region li {
+	display: inline-block;
+}
+
+.blog {
+	text-align: center;
+	color: #333;
+}
+
+/** orden en linea **/
+.orden {
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+	#home-jumbotron {
+		height: 350px;
+		margin: 20px;
+	}
+
+	#home-supporting {
+		height: 600px;
+	}
+
+	#home-featuring #cafe-img {
+		margin-top: 100px;
+	}
+
+	#home-supporting h1 {
+		margin-top: 50px;
+	}
+
+	#home-supporting-2 {
+		margin:20px;
+	}
+
+	#origenes-supporting #button {
+		font-size: 0.8em;
+	}
+
+	#bs-over #home-supporting-2 h2 {
+		font-size: 1em;
+	}
+
+	#bs-over #home-supporting-2 h4 {
+		font-size: 1.5em;
+	}
+
+	#home-featuring-2 {
+	margin-top: 100px;
+
+	}
+
+
+	#bs-over #home-product {
+	margin-top: 150px;
+}
+
+	#bs-over .region a {
+		display: inline-block;
+	}
+
+	#bs-over #distribuidores .row {
+	margin: 5px; 
+	padding: 10px;
+	}
+
+
+	}

@@ -1,0 +1,287 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ #bs-over {
+	position: relative;
+  	overflow: scroll;
+  	font-family: 'Oswald', sans-serif;
+}
+
+#bs-over p {
+	font-weight: 200;
+	color: #989898;
+	line-height: 30px; 
+}
+
+ #bs-over .menu {
+	background-color: #000;
+	color: #fff;
+	height: 100%;
+  	position: fixed;
+  	width: 220px;
+  	right:-220px;
+  	z-index: 1000;
+  	margin-left: 0px;
+  	padding-left: 0px;
+
+
+}
+
+#bs-over #menu {
+	margin-top: 20px;
+	color: #fff;
+	list-style-type: none;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+#bs-over #menu li {
+	color: #fff;
+	opacity: 0.9;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+#bs-over #menu li a {
+	color: #989898;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	list-style-type: none;
+	display: inline;
+}
+
+#bs-over #menu li a:hover{
+	color: #1E1E1E;
+	transition: color .3s;
+}
+
+.main-nav {
+	height: 250px;
+	text-align: center;
+}
+
+#logo {
+	margin-top: 40px;
+	margin-left: 120px;
+}
+
+
+#shopping-cart {
+	font-size: 2.5em;
+	padding: 20px;
+	margin-top: 100px;
+	margin-right: 50px;
+	color: #9F9F9F;
+	cursor: pointer;
+}
+
+#shopping-cart:hover {
+	color:#262626; 
+}
+
+.menu ul {
+	list-style-type: none;
+	margin-left: 25%;
+	padding-left: 0px;
+}
+
+#bs-over .menu li {
+	padding: 10px;
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-top: 10px;
+	font-size: 22px;
+	padding-right: 5px;
+
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#bs-over .menu #span a {
+	color: #888888;
+	border: none;
+}
+
+.icon-close i {
+	cursor: pointer;
+	padding-top: 5px;
+	padding-left: 10px;
+	font-size: 28px;
+}
+
+#icon-menu {
+	display: none;
+	cursor: pointer;
+	padding: 5px;
+	margin-left: 5px;
+	font-size: 28px;
+	z-index: 1000;
+	background-color: #fff;
+}
+
+#bs-over .btn {
+	border-radius: 0%;
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #000;
+	transition: background-color .3s;
+}
+
+#bs-over .btn:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+#bs-over li a span {
+	color: #57585B;
+	background-color: #57585B;
+}
+
+#bs-over li:hover a span {
+    width: 10px;
+    height: 10px;
+    margin: -5px 0px 0px -5px;
+    color: #57585B;
+    background-color: #57585B; 
+}
+
+
+#bs-over form {
+	text-align: left;
+	margin-bottom: 60px;
+}
+
+/** Footer **/
+
+#bs-over .footer h3 {
+	text-transform: uppercase;
+	margin-bottom: 100px;
+	margin-top: 100px;
+}
+
+#bs-over .footer p {
+	text-align: center;
+	margin-bottom: 100px;
+	text-transform: uppercase;
+}
+
+#bs-over .footer ul {
+	list-style-type: none;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#bs-over .footer ul li {
+	display: inline-block;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#bs-over .footer ul li a {
+	text-decoration: none;
+	color: #989898;
+}
+
+#bs-over .footer ul li a:hover {
+	color: #333;
+	transition: color .3s;
+}
+
+#bs-over .footer h3 {
+	text-align: center;
+}
+
+.footer img {
+	display: inline-block;
+}
+
+
+.footer .container {
+	margin-right: 1px;
+	right: 1px;
+}
+
+.footer .social-networks i {
+	font-size: 1.5em;
+	margin-right: 25px;
+}
+
+#bs-over #button {
+	padding: 18px 35px 18px 35px;
+	border: 3px solid #000;
+	border-radius: 2%;
+	background-color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none;
+	color: #000;
+	margin-bottom: 40px;
+}
+
+#bs-over #button:hover {
+	background-color: #000;
+	color: #fff;
+	transition: background-color .3s;
+}
+
+@media only screen and (max-width: 768px) {
+	#bs-over #menu {
+		display: none;
+	}
+
+	#shopping-cart {
+		display: none;
+	}
+
+	#bs-over #logo {
+		margin-left: 5px;
+	}
+
+
+	.main-nav {
+		height: 175px;
+	}
+
+
+		#bs-over #icon-menu {
+		font-size: 32px;
+		color: #000;
+		padding-left: 5px;
+		padding-top: 3px;
+		margin-right: 0px;
+		position: fixed;
+		z-index: 1000;
+		display: block;
+		float: right;
+		margin-top: 20px;
+		top: 5px;
+		right: 20px;
+		cursor: pointer;
+	}
+
+	#bs-over #button {
+		margin-bottom: 80px;
+	}
+
+}

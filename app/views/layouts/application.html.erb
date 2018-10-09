@@ -1,0 +1,139 @@
+<html>
+<head>
+  <title>Caf&eacute; Don Lucas</title>
+  <link rel="icon" href="/images/donlucas.ico">
+  <meta name="author" content="Sofinteractive" />
+  <meta name="description" content="Caf&eacute; Don Lucas, caf&eacute; guatemalteco 100% org&aacute;nico cosechado a las faldas del volc&aacute;n Tajumulco." />
+	<meta name="keywords"  content="Parallax, sofinteractive, caf&eacute;, don lucas, guatemala, san marcos, barista, caf&eacute; guatemalteco." />
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application'%>
+  <%= csrf_meta_tags %>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <!--Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:900|Oswald:200,400" rel="stylesheet"> 
+  <!-- mobile -->
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified JavaScript for bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+<body id="bs-over">
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'cafedonlucas',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.12'
+    });
+  };
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/es_LA/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="fb-customerchat"
+  page_id="1068902413143894"
+  theme_color="#0084ff"
+  logged_in_greeting="Hola! Como te puedo ayudar?"
+  logged_out_greeting="Hola! Como te puedo ayudar?"
+>
+</div>
+	<div class="top" id="top">
+	</div>
+	<div class="menu">
+		<div class="icon-close">
+			<i class="material-icons">close</i>
+		</div>
+			<ul>
+				<li><%= link_to "INICIO", '/', :data => {:reload => true} %></li>
+				<li><%= link_to "NUESTROS ORIGENES", '/nuestros-origenes',:data => { :reload => true } %></li>
+				<li><%= link_to "NUESTRO CAFÉ", '/nuestro-cafe'%></li>
+				<li><%= link_to "COMPRAR", '/comprar'%></li>
+        <li><a href="/preguntas-frecuentes">PREGUNTAS FRECUENTES</a></li>
+			</ul>
+	</div>
+	<i class="material-icons" id="icon-menu">menu</i>
+	<a href="/orden-en-linea"><i class="material-icons pull-right" id="shopping-cart">shopping_cart</i></a>
+	<div class="main-nav">
+		<%= link_to '/', :data => { :reload => true } do %>
+		<img src="/images/logo1Gris.png" style="width:120px;height:94px;" id="logo">
+		<% end %>
+		<br>
+<ul id="menu">
+	<li><a href="/nuestros-origenes">NUESTROS ORIGENES</a></li>
+	<li><a href="/nuestro-cafe">NUESTRO CAFÉ</a></li>
+	<li><a href="/comprar">COMPRAR</a></li>
+	<li><a href="/preguntas-frecuentes">PREGUNTAS FRECUENTES</a></li>
+</ul>
+</div>
+
+<%= yield %>
+
+<!-- mobile nav bar -->
+	<script type="text/javascript">
+	
+	var main = function() {
+
+	/* Push the body and the nav over by 480px over */
+  $('#icon-menu').click(function() {
+  	$('#icon-menu').css('background-color','#000');
+    $('.menu').animate({
+      right: "0px"
+    }, 200);
+
+    $('body').animate({
+      right: "220px"
+    }, 200);
+
+  });
+
+  /* Then push them back */
+  $('.icon-close').click(function() {
+  	$('#icon-menu').css('background-color', '#fff');
+    $('.menu').animate({
+      right: "-220px"
+    }, 200);
+
+    $('body').animate({
+      right: "0px"
+    }, 200);
+
+});
+
+};
+$(document).ready(main);
+
+	</script>
+
+<div class="footer">
+	<h3>Café Don Lucas</h3>
+  <div class="social-networks">
+    <ul id="footer-menu">
+      <li><a href="https://www.facebook.com/cafedonlucas" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://www.instagram.com/cafedonlucas" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="mailto:cafedonlucas@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+    </ul>
+  </div>
+	<ul id="footer-menu">
+		<li><a href="/contacto">CONTACTO</a></li>
+    <li><a href="/distribuidores">DISTRIBUIDORES</a></li>
+		<li><a href="/blog">BLOG</a></li>
+	</ul>
+	<p>Creado por <a href="https://sofinteractive.herokuapp.com" target="_blank">Sofinteractive</a>
+</div>
+
+
+</body>
+</html>
+
