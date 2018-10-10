@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
-ruby "2.3.7"
+ruby "2.4.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', github: '4.2.6'
 # Use postgres for production
 gem 'pg', '~> 0.21'
-#rails plugin for a database independent format 
-gem 'yaml_db'
 #puma web server
 gem 'puma'
+#rails plugin for a database independent format 
+gem 'yaml_db'
 #debise
 gem 'devise'
 
