@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby "2.4.2"
+ruby "2.5.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', github: '4.2.6'
+gem 'rails'
 # Use postgres for production
 gem 'pg', '~> 0.21'
 #puma web server
