@@ -88,7 +88,7 @@
 }
 
 #home-featuring p {
-	text-align: left;
+	text-align: justify;
 	letter-spacing: 1px;
 	color: #989898;
 	margin-bottom: 40px;
@@ -215,6 +215,7 @@
 
 #bs-over .region p {
 	margin-bottom: 40px;
+	text-align: justify;
 }
 
 #bs-over .region ul {
@@ -249,8 +250,21 @@
 		height: 600px;
 	}
 
+	#home-supporting h1 {
+		font-size: 2em;
+	}
+
+	#home-supporting h3{
+	padding: 20px 5px 20px 5px;
+		font-size: 1.5em;
+	}
+
+	#home-supporting p {
+		font-size: 1.1em;
+	}
+
 	#home-featuring #cafe-img {
-		margin-top: 100px;
+		margin-top: 50px;
 	}
 
 	#home-supporting h1 {
