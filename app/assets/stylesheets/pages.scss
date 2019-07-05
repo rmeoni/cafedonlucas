@@ -3,13 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #home-jumbotron {
-	background-image: url("/images/SAM_6998.jpg");
+	background-image: url("/images/SAM_7000.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 600px;
-	margin:50px;
+	height: 500px;
+	margin:50px 50px 0px 50px;
 	text-align: center;
 }
 
@@ -22,6 +22,7 @@
 	text-align: center;
 	height: 700px;
 	padding: 40px;
+	margin: 0px 50px 50px 50px;
 	text-transform: uppercase;
 
 }
